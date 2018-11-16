@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/member/main",
+    "pages/index/main",
+    "pages/detail/main",
+    "pages/classify/main",
+    "pages/cart/main",
+    "pages/search/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "black",
+    "navigationBarBackgroundColor": "#bd6a42",
+    "navigationBarTextStyle": "#ffffff",
+    "navigationBarTitleText": "伟达酒业"
+  }
+}
