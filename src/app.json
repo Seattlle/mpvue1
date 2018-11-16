@@ -1,10 +1,10 @@
 {
   "pages": [
-    "pages/member/main",
     "pages/index/main",
     "pages/detail/main",
     "pages/classify/main",
     "pages/cart/main",
+    "pages/member/main",
     "pages/search/main"
   ],
   "window": {
