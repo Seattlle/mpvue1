@@ -6,7 +6,8 @@
     "i-checkbox-group": "../../static/iview/checkbox-group/index",
     "i-checkbox": "../../static/iview/checkbox/index",
     "i-button": "../../static/iview/button/index",
-    "i-icon": "../../static/iview/icon/index"
+    "i-icon": "../../static/iview/icon/index",
+    "i-badge": "../../static/iview/badge/index"
   },
   "navigationBarTitleText": "个人中心"
 }

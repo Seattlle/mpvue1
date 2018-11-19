@@ -4,8 +4,13 @@
     "pages/detail/main",
     "pages/classify/main",
     "pages/cart/main",
+    "pages/search/main",
     "pages/member/main",
-    "pages/search/main"
+    "pages/userCenter/order/main",
+    "pages/userCenter/payment/main",
+    "pages/userCenter/delivery/main",
+    "pages/userCenter/receipt/main",
+    "pages/userCenter/orderDetail/main"
   ],
   "window": {
     "backgroundTextStyle": "black",

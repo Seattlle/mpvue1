@@ -31,8 +31,6 @@
 <style scoped>
   .grids{
     width:100%;
-  }
-  .grids-item{
     background:#fff;
   }
 </style>

@@ -4,7 +4,7 @@
       <i-col span="12" v-for="(item,index) in products" :key="index">
         <a href="/pages/detail/main" class="col-class" :class="{'col-right-border':(index+1)%2===1}">
           <div class="product_img">
-            <img :src="item.src" class="img"/>
+            <image :src="item.src" class="img" mode="widthFix"></image>
           </div>
           <div class="product_content">
             <h4 class="product_title">{{item.title}}</h4>
@@ -82,7 +82,7 @@
   }
   .product_img .img{
     width:100%;
-    height:315rpx;
+    height:auto;
   }
   .product_title{
     display: block;

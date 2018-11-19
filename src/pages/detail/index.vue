@@ -97,6 +97,9 @@
   }
 </style>
 <style scoped>
+  .main{
+    background-color:#fff;
+  }
   .product_big_img {
     width: 100%;
   }

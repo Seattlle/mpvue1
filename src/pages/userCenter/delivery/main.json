@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "i-tab-bar": "../../../static/iview/tab-bar/index",
+    "i-tab-bar-item": "../../../static/iview/tab-bar-item/index",
+    "i-toast": "../../../static/iview/toast/index",
+    "i-checkbox-group": "../../../static/iview/checkbox-group/index",
+    "i-checkbox": "../../../static/iview/checkbox/index",
+    "i-button": "../../../static/iview/button/index",
+    "i-input-number": "../../../static/iview/input-number/index"
+  },
+  "navigationBarTitleText": "待发货",
+  "enablePullDownRefresh":true,
+  "backgroundColor":"#f2f2f2"
+}

@@ -2,16 +2,11 @@
   <div class="container">
     <div class="main">
       <search @search-event="searchEvent"/>
-
-
-      <div class="classify">
-        <div class="classify_left">
-          <i-cell-group>
-            <i-cell title="国家"></i-cell>
-            <i-cell title="品牌"></i-cell>
-          </i-cell-group>
+      <div class="classify i-cell">
+        <div class="classify_left i-cell-item">
+          <div class="class_type" v-for="(item,index) in type" :key="index" :class="{active:index===active}" @click="active=index;">{{item.name}}</div>
         </div>
-        <div class="classify_right">
+        <div class="classify_right i-cell-item4">
             <i-index height="100%" @change="onChange">
               <i-index-item v-for="(item,index) in lists" :key="index" :name="item.key">
                 <view class="i-index-item" v-for="(it,ii) in item.list" :key="ii" @click="toSearchThis(it,index)">
@@ -39,12 +34,16 @@
     },
     data(){
       return {
+        active:0,
+        type:[{
+          name:'国家'
+        },{
+          name:'品牌'
+        }],
         lists:[{
             key:'F',
             list:[{
               name:'费碧0'
-            },{
-              name:'费碧1'
             }]
           },{
           key:'L',
@@ -82,14 +81,19 @@
 
 <style scoped>
   .classify{
+    background-color:#fff;
     display: flex;
   }
   .classify_left{
-    flex:1;
     text-align:center;
+    background-color:#f2f2f2;
   }
-  .classify_right{
-    flex:4;
+  .class_type{
+    padding:10px 15px;
+    font-size:14px;
+  }
+  .class_type.active{
+    background-color:#fff;
   }
   .i-index-item{
     padding:10px;
