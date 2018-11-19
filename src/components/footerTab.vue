@@ -48,9 +48,6 @@
         }
       }
     },
-    // beforeCreate(){
-    //   this.$store.commit('switchTab','');
-    // },
     computed:{
       currentKey(){
         return this.$store.state.footerCurrentTab;
@@ -62,7 +59,7 @@
         if(this.$store.state.footerCurrentTab!==key){
           for(let i in this.tabs){
             if(this.tabs[i]['key']===key){
-              wx.navigateTo({
+              wx.redirectTo({
                 url: this.tabs[i]['path']
               });
               break;
