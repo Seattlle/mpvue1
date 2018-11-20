@@ -18,8 +18,8 @@
                     </div>
                   </div>
                   <div class="i-cell detail product_right_bottom">
-                    <div class="i-cell-item price">￥{{item.price}}</div>
-                    <div class="i-cell-item">
+                    <div class="i-cell-item price"><div>￥{{item.price}}</div></div>
+                    <div class="inputNumber">
                         <i-input-number :value="item.number" min="1" max="100000" @change="changeNumber" :id="'input-number-'+index"/>
                     </div>
                   </div>
@@ -30,13 +30,13 @@
 
     <!--底部工具栏-->
     <div class="toolBar i-cell">
-      <div class="toolBarLeft i-cell-item">
+      <div class="toolBarLeft">
         <i-panel>
           <i-checkbox value="全选"  :checked="checkAll" @change="toggleCheckAll"></i-checkbox>
         </i-panel>
       </div>
-      <div class="toolBarRight i-cell-item3 i-cell">
-        <div class="totalPrice i-cell-item3">￥{{totalPrice}}</div>
+      <div class="toolBarRight i-cell-item i-cell">
+        <div class="totalPrice i-cell-item"><span class="n">￥{{totalPrice}}</span></div>
         <div class="toBuyItNow">
           <i-button  type="primary" size="small">去结算</i-button>
         </div>
@@ -146,13 +146,10 @@
 
 
 <style>
-  page{
-    background: #f9f9f9;
-  }
   .pcheckbox .i-checkbox{
     position: absolute;
     top:50%;
-    left:-2.5px;
+    left:-10px;
     -webkit-transform: translate(0,-50%);
     -moz-transform: translate(0,-50%);
     -ms-transform: translate(0,-50%);
@@ -166,7 +163,7 @@
   }
   .toolBar{
     position:fixed;
-    bottom:90rpx;
+    bottom:52.5px;
     left:0;
     width:100%;
     background-color:#fff;
@@ -181,10 +178,12 @@
   }
   .totalPrice,.toBuyItNow{
     vertical-align: middle;
-    line-height: 50px;
   }
-  .toolBarRight .toBuyItNow{
-    width:80px;
+  .totalPrice{
+    position: relative;
+  }
+  .totalPrice .n{
+    line-height: 60px;
   }
 
   .productItem{
@@ -234,5 +233,9 @@
   }
   .product_right_bottom .price{
     color: #ff0000;
+    line-height: 30px;
+    display: flex;
+    align-items: flex-end;
   }
+
 </style>
